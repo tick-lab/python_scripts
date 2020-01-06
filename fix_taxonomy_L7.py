@@ -4,7 +4,7 @@ import sys
 
 with open(sys.argv[1], "r") as f:
 	for line in f:
-		x = line
+		x = line.rstrip("\n")
 		y = x.count(";")
 		if y < 6:
 			add = 6 - y
