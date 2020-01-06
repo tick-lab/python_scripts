@@ -1,3 +1,5 @@
+''' Adds missing fields to list of taxonomy strings. Use: python fix_taxonomy_L7.py my_taxa.txt > new_taxa.txt '''
+
 import sys
 
 with open(sys.argv[1], "r") as f:
