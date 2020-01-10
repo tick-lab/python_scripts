@@ -8,7 +8,7 @@ with open(sys.argv[1], "r") as f:
 		y = x.count(";")
 		if y < 6:
 			add = 6 - y
-			new = ";unknown" * add
+			new = (";" + x.split(";")[-1] + "_unknown") * add
 			print(x + new)
 		else:
 			print(x)
